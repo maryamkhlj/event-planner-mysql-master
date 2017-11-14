@@ -6,11 +6,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import hello.Event;
 import hello.EventRepository;
 
 @Controller    // This means that this class is a Controller
+@CrossOrigin(origins = "http://localhost:8080")
 @RequestMapping(path="/demo") // This means URL's start with /demo (after Application path)
 public class MainController {
 	@Autowired // This means to get the bean called userRepository
