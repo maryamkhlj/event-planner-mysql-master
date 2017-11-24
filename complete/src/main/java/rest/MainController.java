@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 import hello.Event;
 import hello.EventRepository;
+/*test*/
 
 @Controller    // This means that this class is a Controller
 @CrossOrigin(origins = "http://localhost:8080")
